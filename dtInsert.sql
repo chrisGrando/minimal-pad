@@ -26,7 +26,7 @@ INSERT INTO anotacoes(id, texto) VALUES
   (10, 'Vestibulum at diam luctus purus posuere consequat in at urna. Integer vitae rutrum eros, ac egestas magna. Donec porttitor enim vitae odio laoreet, vel mollis leo dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed pretium, mauris non ultricies pharetra, dui odio malesuada nunc, et interdum augue nisl finibus est. Curabitur metus odio, consectetur at nulla non, volutpat dapibus metus. Integer at arcu a dolor laoreet laoreet in a diam. Nullam mollis, metus nec rutrum dignissim, est eros tempor massa, accumsan laoreet mauris ante in neque. Nullam lacinia orci vitae lacus dignissim, sit amet lobortis leo laoreet. In quis est velit. Fusce blandit arcu non metus ornare porttitor. Aenean a venenatis nulla.');
 
 --Inserção da relação "Escrever"
-INSERT INTO escrever(email, id) VALUES
+INSERT INTO autor(email, id) VALUES
   ('marisa.kirisame@big.com.jp', 1),
   ('chris.grando@hotmail.com', 1),
   ('susie2018@outlook.com.br', 3),
@@ -44,3 +44,32 @@ INSERT INTO escrever(email, id) VALUES
   ('tifannyblues@gmail.com', 10);
 
 --Inserção de Eventos
+INSERT INTO eventos(id, titulo, "data", hora, descricao, usr_email) VALUES
+  (1, 'Avião para São Paulo', '2022-05-14', '07:00', NULL, 'ernesto.nesto@estudante.uffs.edu.br'),
+  (2, 'LiveStream - Latim', '2022-06-13', '19:30', 'Proin vel faucibus turpis. Duis maximus mattis.', 'chris.grando@hotmail.com'),
+  (3, 'Dia da entrega', '2022-04-20', NULL, 'Dia previsto de entrega do produto que comprei online', 'susie2018@outlook.com.br'),
+  (4, 'Evento de caridade', '2022-07-12', '13:15', 'Levar alimentos não-perecíveis para doação', 'chris.grando@hotmail.com'),
+  (5, 'Reunião do Sindicato', '2022-05-02', '14:00', NULL, 'michelliz@gmail.com.br'),
+  (6, 'Ônibus para Florianópolis', '2022-06-01', '10:30', 'Saída no terminal rodoviário de Chapecó', 'reimu.hakurei@big.com.jp'),
+  (7, 'Prova de Cálculo Numérico', '2022-08-09', '16:20', 'Será permitido consultar o material', 'emily.wilson@estudante.uffs.edu.br'),
+  (8, 'Dentista', '2022-04-08', '15:00', NULL, 'tifannyblues@gmail.com'),
+  (9, 'SACC VI', '2022-03-14', NULL, 'Semana Acadêmica da Ciência da Computação (Edição VI)', 'george2010@yahoo.com.br'),
+  (10, 'Seleção Bolsista', '2022-04-29', '16:00', 'Seleção para bolsa de estudos da UFFS', 'emily.wilson@estudante.uffs.edu.br');
+
+--Inserção da relação "Participar"
+INSERT INTO participante(id, email) VALUES
+  (2, 'marisa.kirisame@big.com.jp'),
+  (5, 'neusaantunes@yahoo.com'),
+  (7, 'chris.grando@hotmail.com'),
+  (9, 'ernesto.nesto@estudante.uffs.edu.br'),
+  (7, 'george2010@yahoo.com.br'),
+  (9, 'susie2018@outlook.com.br'),
+  (4, 'michelliz@gmail.com.br'),
+  (4, 'neusaantunes@yahoo.com'),
+  (10, 'ernesto.nesto@estudante.uffs.edu.br'),
+  (6, 'marisa.kirisame@big.com.jp'),
+  (2, 'tifannyblues@gmail.com'),
+  (8, 'george2010@yahoo.com.br'),
+  (9, 'reimu.hakurei@big.com.jp'),
+  (5, 'ernesto.nesto@estudante.uffs.edu.br'),
+  (4, 'tifannyblues@gmail.com');
