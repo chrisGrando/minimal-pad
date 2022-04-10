@@ -21,7 +21,7 @@ CREATE TABLE anotacoes (
 \d anotacoes
 
 --Criação da relação/tabela "Escrever"
-CREATE TABLE escrever (
+CREATE TABLE autor (
   email VARCHAR(70) NOT NULL,
   id INTEGER NOT NULL,
   CONSTRAINT fk_usuario FOREIGN KEY (email) REFERENCES usuario(email),
@@ -43,7 +43,7 @@ CREATE TABLE eventos (
 \d eventos
 
 --Criação da relação/tabela "Participar"
-CREATE TABLE participar (
+CREATE TABLE participante (
   id INTEGER NOT NULL,
   email VARCHAR(70) NOT NULL,
   CONSTRAINT fk_id_evento FOREIGN KEY (id) REFERENCES eventos(id),
